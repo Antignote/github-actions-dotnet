@@ -19,3 +19,7 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
+
+      - name: dotnet test
+        # --no-build will use dll from prev. build
+        run: dotnet test --configuration Release --no-build
