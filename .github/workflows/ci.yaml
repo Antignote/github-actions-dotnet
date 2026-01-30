@@ -19,7 +19,7 @@ jobs:
 
       - name: dotnet test
         # --no-build will use dll from prev. build
-        run: dotnet test --configuration Release --no-build
+        run: dotnet test --configuration Release
     
       # output files in release mode in artifacts dir
       # just include the app, not the tests
