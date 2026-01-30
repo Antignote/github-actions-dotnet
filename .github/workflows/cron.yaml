@@ -1,0 +1,17 @@
+name: Run every 5 minutes
+
+on:
+  workflow_dispatch:
+# should be changed to run once an hour to not drop jobs
+#   schedule:
+#     - cron: '*/5 * * * *'
+
+jobs:
+  cron:
+    name: Run every 5 minutes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello world
+        # --no-build will use dll from prev. build
+        run: echo "Hello world"
