@@ -6,13 +6,6 @@ on:
       env: 
         require: true
         type: string
-      secrets:
-        AZURE_CLIENT_ID:
-          require: true
-        AZURE_TENANT_ID:
-          require: true
-        AZURE_SUBSCRIPTION_ID:
-          require: true
 
 jobs:
   deploy:
