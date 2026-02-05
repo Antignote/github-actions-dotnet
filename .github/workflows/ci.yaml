@@ -45,7 +45,7 @@ jobs:
     with:
       env: dev
       resource_group_name: rg-dometrain-env
-      app_service_name: app-dometrain-github-actions-antignote-env
+      app_service_name: app-dometrain-github-actions-antignote-dev
     secrets: inherit  
     
   deploy_prod:
