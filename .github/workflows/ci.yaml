@@ -52,4 +52,4 @@ jobs:
     uses: ./.github/workflows/step-deploy.yaml
     with:
       env: dev
-      secrets: inherit  
+    secrets: inherit
